@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mouse leave Popup</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+        </div>
+        <div id="modelBox">
+            <img src="modal-box-img/images/banner.png" width="100%">
+            <div class="offer-text">
+                <h2>Get 15% OFF</h2>
+                <small>on all beauty products</small>
+                <p>Coloressence is a proud Made in India Brand that empowers women to buy premium makeup products at affordable prices</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Buy</button>
+                </form>
+            </div>
+            <img src="modal-box-img/images/close.png" class="close-icon" onclick="closeModel()">
+        </div>
+
+        <script>
+            let modelBox = document.getElementById("modelBox");
+
+            document.onmouseleave = function(){
+                modelBox.style.display = "block";
+            }
+
+            function closeModel(){
+                modelBox.style.display = "none";
+            }
+        </script>
+
+
+    </body>
+</html>
